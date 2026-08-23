@@ -1,0 +1,22 @@
+{
+  "extension": "@mgreten/cross-source-evidence",
+  "version": "2026.08.23.1",
+  "reviewedAt": "2026-08-23T20:27:46Z",
+  "dimensions": [
+    { "id": "credentials-secrets", "verdict": "na", "note": "No credentials are accepted, accessed, logged, or emitted." },
+    { "id": "logging-quality", "verdict": "pass" },
+    { "id": "error-handling", "verdict": "pass" },
+    { "id": "testing-completeness", "verdict": "pass" },
+    { "id": "idempotency-resilience", "verdict": "pass", "note": "Exact replay is deterministic and produces recommendation-only data with no external side effects." },
+    { "id": "api-contracts", "verdict": "na", "note": "No API or external agent is invoked by this extension." },
+    { "id": "resource-management", "verdict": "pass" },
+    { "id": "published-surface-hygiene", "verdict": "pass" },
+    { "id": "schema-strictness", "verdict": "pass" },
+    { "id": "lifetime-gc", "verdict": "pass" },
+    { "id": "crud-completeness", "verdict": "na", "note": "This is a local prepare/validate pipeline, not a CRUD lifecycle model." },
+    { "id": "preflight-checks", "verdict": "na", "note": "Neither method mutates an external resource." },
+    { "id": "instance-names", "verdict": "pass" },
+    { "id": "data-access", "verdict": "na", "note": "No stored state is read." },
+    { "id": "version-upgrades", "verdict": "na", "note": "Initial unpublished version." }
+  ]
+}
